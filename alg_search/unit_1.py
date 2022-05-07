@@ -23,7 +23,7 @@ def find_last_x():
     ans = -1
     x = int(input('Какое число ищем? '))
     seq = list(map(int, input('Введите последовательность положительных чисел через пробел: ').split()))
-    for i in range(len(seq)):
+    for i in range(1, len(seq)): # начинаем с 1 элемента, чтобы не сравнивать сам с собой элемент на 1 шаге
         if seq[i]== x:
              ans = i
 
